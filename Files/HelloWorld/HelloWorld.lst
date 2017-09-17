@@ -1,0 +1,48 @@
+     Assembly listing for: HelloWorld.mas
+                Assembled: Sat Sep 16 18:59:24 BST 2017
+
+         |                          //Hello, World aaa
+         |                          
+         |         ORG 100           
+100 A000 |  LOOP   CLEAR             
+101 B10E |         ADDI NEXT         
+102 6000 |         OUTPUT            
+103 110E |         LOAD NEXT         
+104 310C |         ADD ONE           
+105 210E |         STORE NEXT        
+106 110D |         LOAD CTR          
+107 410C |         SUBT ONE          
+108 210D |         STORE CTR         
+109 8000 |         SKIPCOND 000      
+10A 9100 |         JUMP LOOP         
+10B 7000 |         HALT              
+10C 0001 |  ONE    HEX 1             
+10D 000D |  CTR    DEC 13            
+10E 010F |  NEXT   HEX 10F           
+10F 0048 |         DEC 72            
+110 0065 |         DEC 101           
+111 006C |         DEC 108           
+112 006C |         DEC 108           
+113 006F |         DEC 111           
+114 002C |         DEC 44            
+115 0020 |         DEC 32            
+116 0057 |         DEC 87            
+117 006F |         DEC 111           
+118 0072 |         DEC 114           
+119 006C |         DEC 108           
+11A 0064 |         DEC 100           
+11B 002E |         DEC 46            
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          CTR    |   10D   | 106, 108
+          LOOP   |   100   | 10A
+          NEXT   |   10E   | 101, 103, 105
+          ONE    |   10C   | 104, 107
+         --------------------------------------------------
+
+

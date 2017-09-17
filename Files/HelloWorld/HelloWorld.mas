@@ -1,0 +1,31 @@
+//Hello, World aaa
+
+       ORG 100
+LOOP,   CLEAR
+       ADDI NEXT
+       OUTPUT
+       LOAD NEXT
+       ADD ONE
+       STORE NEXT
+       LOAD CTR
+       SUBT ONE
+       STORE CTR
+       SKIPCOND 000
+       JUMP LOOP
+       HALT
+ONE,    HEX 1
+CTR,    DEC 13
+NEXT,   HEX 10F
+       DEC 72
+       DEC 101
+       DEC 108
+       DEC 108
+       DEC 111
+       DEC 44
+       DEC 32
+       DEC 87
+       DEC 111
+       DEC 114
+       DEC 108
+       DEC 100
+       DEC 46
